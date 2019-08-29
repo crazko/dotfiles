@@ -1,0 +1,31 @@
+[user]
+	name = Roman Vesely
+	email = crazko@gmail.com
+
+[core]
+	editor = vim
+	excludesfile = ~/.gitignore
+
+[commit]
+	template = ~/.gitmessage
+
+[push]
+	default = current
+
+[alias]
+	s = status --short
+	c = commit
+	cm = commit -m
+	cma = commit --all -m
+	ca = commit --amend
+	stats = shortlog --summary --numbered --all --no-merges --since='2 weeks'
+	me = log --oneline --all --author="Roman" --since='2 weeks' --pretty=format:'%C(yellow)%h %C(blue)[%ad] %Creset%s %C(green bold)%D' --date=short
+	ls = log --pretty=format:'%C(yellow)%h %C(blue)[%ad] %C(green bold)%D %Creset%s%C(red) [%cn%Creset %ce%C(red)]' --decorate --date=relative
+	dog = log --all --decorate --oneline --graph
+
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+
