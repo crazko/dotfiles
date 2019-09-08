@@ -2,5 +2,7 @@
 .DS_Store
 .idea
 .vscode
+!.vscode/settings.json
+!.vscode/extensions.json
 
 Thumbs.db

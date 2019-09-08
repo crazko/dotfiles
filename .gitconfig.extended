@@ -1,0 +1,5 @@
+# place for company specific configuration
+
+# [includeIf "gitdir:~/dev/<repo>/"]
+# 	path = .gitconfig-company
+

@@ -9,6 +9,9 @@
 [commit]
 	template = ~/.gitmessage
 
+[include]
+	path = .gitconfig.extended
+
 [push]
 	default = current
 
