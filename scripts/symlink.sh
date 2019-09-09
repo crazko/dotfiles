@@ -30,7 +30,7 @@ function linkDotfile {
 }
 
 linkDotfile .gitconfig
-linkDotfile .gitconfig.extended
+linkDotfile .gitconfig-extended
 linkDotfile .gitignore
 linkDotfile .gitmessage
 linkDotfile .vimrc

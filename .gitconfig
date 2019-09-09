@@ -10,7 +10,7 @@
 	template = ~/.gitmessage
 
 [include]
-	path = .gitconfig.extended
+	path = .gitconfig-extended
 
 [push]
 	default = current
