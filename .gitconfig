@@ -19,8 +19,8 @@
 	s = status --short
 	c = commit
 	cm = commit -m
-	cma = commit --all -m
 	ca = commit --amend
+	fixup = commit --amend --no-edit
 	stats = shortlog --summary --numbered --all --no-merges --since='2 weeks'
 	me = log --oneline --all --author="Roman" --since='2 weeks' --pretty=format:'%C(yellow)%h %C(blue)[%ad] %Creset%s %C(green bold)%D' --date=short
 	ls = log --pretty=format:'%C(yellow)%h %C(blue)[%ad] %C(green bold)%D %Creset%s%C(red) [%cn%Creset %ce%C(red)]' --decorate --date=relative
