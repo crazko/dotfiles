@@ -26,6 +26,7 @@
 	me = log --oneline --all --author="Roman" --since='2 weeks' --pretty=format:'%C(yellow)%h %C(blue)[%ad] %Creset%s %C(green bold)%D' --date=short
 	ls = log --pretty=format:'%C(yellow)%h %C(blue)[%ad] %C(green bold)%D %Creset%s%C(red) [%cn%Creset %ce%C(red)]' --decorate --date=relative
 	dog = log --all --decorate --oneline --graph
+	pf = push --force-with-lease
 
 [filter "lfs"]
 	required = true
