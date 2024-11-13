@@ -4,5 +4,6 @@
 .vscode
 !.vscode/settings.json
 !.vscode/extensions.json
+__dummy__
 
 Thumbs.db
