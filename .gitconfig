@@ -8,12 +8,14 @@
 
 [commit]
 	template = ~/.gitmessage
+	verbose = true
 
 [include]
 	path = .gitconfig-extended
 
 [push]
 	default = current
+	autoSetupRemote = true
 
 [alias]
 	s = status --short
@@ -34,3 +36,34 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 
+[help]
+	autocorrect = prompt
+
+[branch]
+	sort = -committerdate
+
+[column]
+	ui = auto
+
+[tag]
+	sort = version:refname
+
+[diff]
+	algorithm = histogram
+	colorMoved = plain
+	mnemonicPrefix = true
+	renames = true
+
+[fetch]
+	prune = true
+	pruneTags = true
+	all = true
+
+[rerere]
+	enabled = true
+	autoupdate = true
+
+[rebase]
+	autoSquash = true
+	autoStash = true
+	updateRefs = true
