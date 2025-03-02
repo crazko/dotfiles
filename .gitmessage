@@ -1,36 +1,23 @@
 
-# ```
-# <type>(<scope>): <subject>
+# Conventional commit <type> must be one of the following:
+# 
+#   build     The build system or external dependencies (example scopes: vite, npm)
+#   chore     Miscellaneous, maintenance, e.g. modifying .gitignore
+#   ci        CI configuration files and scripts (example scopes: Travis, Bamboo)
+#   docs      Documentation only changes
+#   feat      A new feature
+#   fix       A bug fix
+#   perf      A code change that improves performance
+#   refactor  A code change that neither fixes a bug nor adds a feature
+#   style     Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)
+#   test      Adding missing tests or correcting existing tests
 #
-# <body>
+# A Breaking change can be part of commits of any type when <footer> contains: 
+# 
+#   BREAKING CHANGE: <description>
+# 
+# or, when `!` is appended after the type/scope:
 #
-# <footer>
-# ```
+#   feat!(<scope>): <description>
 #
-# Please note that:
-#  - The HEADER is a single line of max. 50 characters that         
-#    contains a succinct description of the change. It contains a   
-#    type, an optional scope, and a subject
-#       + <type> describes the kind of change that this commit is   
-#                providing. Allowed types are:
-#             * feat (feature)
-#             * fix (bug fix)
-#             * docs (documentation)
-#             * style (formatting, missing semicolons, …)
-#             * refactor
-#             * test (when adding missing tests)
-#             * chore (maintain)
-#       + <scope> can be anything specifying the place of the commit    
-#                 change
-#       + <subject> is a very short description of the change, in   
-#                   the following format:
-#             * imperative, present tense: “Change” not             
-#               “Changed” / “Changes”
-#             * no dot (.) at the end
-#  - The BODY should include the motivation for the change and      
-#    contrast this with previous behavior and must be phrased in   
-#    imperative present tense 
-#  - The FOOTER should contain any information about Breaking       
-#    Changes and is also the place to reference GitHub issues that   
-#    this commit closes
 #
