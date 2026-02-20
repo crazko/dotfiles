@@ -18,7 +18,7 @@
 	autoSetupRemote = true
 
 [alias]
-	s = status --short
+	s = status --short --branch
 	co = checkout
 	c = commit
 	cm = commit -m
