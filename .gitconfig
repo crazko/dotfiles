@@ -29,6 +29,9 @@
 	ls = log --pretty=format:'%C(yellow)%h %C(blue)[%ad] %C(green bold)%D %Creset%s%C(red) [%cn%Creset %ce%C(red)]' --decorate --date=relative
 	dog = log --all --decorate --oneline --graph
 	pf = push --force-with-lease
+	rbi = rebase --interactive
+	rba = rebase --abort
+	rbc = rebase --continue
 
 [filter "lfs"]
 	required = true
